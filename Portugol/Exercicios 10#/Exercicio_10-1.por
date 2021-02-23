@@ -30,7 +30,7 @@ programa
  * 
  * @POSICAO-CURSOR = 376; 
  * @PONTOS-DE-PARADA = 19;
- * @SIMBOLOS-INSPECIONADOS = {vetor, 10, 10, 5}-{num, 10, 20, 3};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
