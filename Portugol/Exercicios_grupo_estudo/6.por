@@ -4,7 +4,8 @@ programa
 	funcao inicio()
 	{
 		/*Crie um programa utilizando laços de repetição aninhados que exiba na 
-		tela a tabuada de multiplicação dos números de 1 a 2. */
+		tela a tabuada de multiplicação dos números de 1 a 2. Imprima somente a tabuada de
+		valores pares e multiplique eles somente por palores pares*/ 
 
 		inteiro i, mult, x 
 		real imp
@@ -35,7 +36,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 414; 
+ * @POSICAO-CURSOR = 258; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
