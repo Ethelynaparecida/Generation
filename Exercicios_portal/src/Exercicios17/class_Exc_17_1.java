@@ -20,7 +20,7 @@ public class class_Exc_17_1 {
 			
 			System.out.println("O valor da soma é "+soma);
 			
-			a[4]=100;
+			a[3]=100;
 			
 			for(int x=0;x<=5;x++)
 			{
