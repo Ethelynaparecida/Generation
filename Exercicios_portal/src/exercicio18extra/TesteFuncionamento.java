@@ -40,7 +40,7 @@ public class TesteFuncionamento {
 			emp1.setSalarioBase(leia.nextFloat());
 			System.out.println("Digite o codigo do setor");
 			emp1.setCodigoSetor(leia.nextInt());
-			emp1.setImposto(25/100f);
+			emp1.setImposto(25*100f);
 			
 			
 			System.out.println("\n\nEmpregado "+ emp1.getNome()+ "" +emp1.getSobrenome()+ " do setor "+  emp1.getCodigoSetor());
