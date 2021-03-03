@@ -22,5 +22,18 @@ public class Administrador extends Pessoa{
 		return formatoMoeda;
 	}
 
+	public float getAjudaDeCusto() {
+		return ajudaDeCusto;
+	}
+
+	public void setAjudaDeCusto(float ajudaDeCusto) {
+		this.ajudaDeCusto = ajudaDeCusto;
+	}
+
+	/*public void setAjudaDeCusto(float nextFloat) {
+		// TODO Auto-generated method stub
+		
+	}*/
+	
 }
 

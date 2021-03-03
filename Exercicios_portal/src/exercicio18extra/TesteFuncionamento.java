@@ -46,7 +46,15 @@ public class TesteFuncionamento {
 			System.out.println("\n\nEmpregado "+ emp1.getNome()+ "" +emp1.getSobrenome()+ " do setor "+  emp1.getCodigoSetor());
 			System.out.println("Antigo salario "+emp1.getSalarioBase()+"salario novo "+emp1.calculoSalario());
 			break;
-		
+			
+		case 3:
+			Administrador adm1 = new Administrador(null,null,0);
+			adm1.setNome(leia.next());
+			adm1.setSobrenome(leia.next());
+			adm1.setAjudaDeCusto(leia.nextFloat());
+			
+			System.out.println("\n\nNome  "+adm1.getNome()+" "+adm1.getSobrenome()+" valor da ajuda de custo "+adm1.getAjudaDeCusto());
+			break;
 		}
 		
 	}
