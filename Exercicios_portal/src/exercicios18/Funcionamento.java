@@ -9,6 +9,18 @@ public class Funcionamento {
 		dog1.setStatus(true);
 		dog1.comendoCachorro();
 
+		
+		Cavalo pocoto1 = new Cavalo();
+		pocoto1.emitirSom();
+		pocoto1.comendoCavalo();
+		pocoto1.setStatus(true);
+		pocoto1.comendoCavalo();
+		
+		Preguica sono = new Preguica();
+		sono.sobeArvore();
+		sono.setStatus(true);
+		sono.sobeArvore();
+		
 	}
 
 }
