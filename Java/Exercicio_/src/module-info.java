@@ -1,2 +1,0 @@
-module Exercicio_1 {
-}
