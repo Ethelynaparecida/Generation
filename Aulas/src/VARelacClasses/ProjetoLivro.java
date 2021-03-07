@@ -15,6 +15,7 @@ public class ProjetoLivro {
 		l[0].abrir();
 		System.out.println(l[0].detalhes());
 		
+		
 	}
 
 }

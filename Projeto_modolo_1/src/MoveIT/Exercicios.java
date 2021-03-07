@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Exercicios {
 	Scanner leia = new Scanner(System.in);
-
+	
+	//coleta as informações da classe pessoa
 	private Pessoa usuario;
 	
 	
@@ -74,13 +75,13 @@ public class Exercicios {
 		//exercicios para a categoria jovem
 		ArrayList<String> exer = new ArrayList<String>();
 		
-		exer.add("Estique o braço direito na horizontal para o lado esquerdo, segure-o com seu braço esquerdo matenha a coluna ereta e respire fundo");
+		exer.add("Estique o braço direito na horizontal para o lado esquerdo,\n segure-o com seu braço esquerdo matenha a coluna ereta e respire fundo");
 		exer.add("\nRepita o movimento invertendo os braços, estique o braço esquerdo e segure com o direito.");
-		exer.add("\nApoie a mão direita na cintura e mantenha os joelhos flexionados, com o braço esquerdo incline-se para a lateral  estique o  braço sobre a cabeça. ");
-		exer.add("\nRepita o movimento invertendo os braços, estique o braço direito sobre a cabeça e apoie a mão esquerda na cintura");
-		exer.add("\nPuxe os dois braços para cima, juntando as mãos. Sinta todo o tronco alongar e fique apoiado na ponta dos pes.");
+		exer.add("\nApoie a mão direita na cintura e mantenha os joelhos flexionados,\n com o braço esquerdo incline-se para a lateral  estique o  braço sobre a cabeça. ");
+		exer.add("\nRepita o movimento invertendo os braços, estique o braço direito sobre a cabeça e\n apoie a mão esquerda na cintura");
+		exer.add("\nPuxe os dois braços para cima, juntando as mãos. Sinta todo o tronco alongar e\n fique apoiado na ponta dos pes.");
 		exer.add("\nAgora, junte os dois braços para trás do corpo. Você irá sentir o seu peito alongando. respire fundo.");
-		exer.add("\nUsando uma parede ou movel como apoio eleve seu pe direito e segura ele atras.(10segundos), repita o movimento invertento os pes.");
+		exer.add("\nUsando uma parede ou movel como apoio eleve seu pe direito e segura ele atras.\nRepita o movimento invertento os pes.");
 		exer.add("\nFaça movimentos circulares no sentido horario com o pescoço 4 vezes, repita no sentido anti-horario.");
 		
 		//apresentação dos exercicios a cada 10 segundos
@@ -139,7 +140,7 @@ public class Exercicios {
 		
 		
 		//lista de exercicios 
-		exercicio.add("Estique o braço direito na horizontal para o lado esquerdo, segure-o com seu braço esquerdo matenha a coluna ereta e respire fundo ");
+		exercicio.add("Estique o braço direito na horizontal para o lado esquerdo, segure-o com seu braço \nesquerdo matenha a coluna ereta e respire fundo ");
 		exercicio.add("\nRepita o movimento invertendo os braços, estique o braço esquerdo e segure com o direito.");
 		exercicio.add("\nAgora, junte os dois braços para trás do corpo. Você irá sentir o seu peito alongando. respire fundo.");
 		exercicio.add("\nUsando uma cadeira ou movel como apoio eleve seu pé direito repita o movimento invertento os pes.");
