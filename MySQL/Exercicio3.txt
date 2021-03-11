@@ -1,0 +1,73 @@
+#EXERCICIO1
+create database db_rh;
+
+use db_rh;
+
+create table tb_funcionarios(
+id_funcionarios bigint auto_increment,
+nome_funcionarios varchar(20) not null,
+salario_funcionarios double not null,
+primary key (id_funcionarios));
+
+insert into tb_funcionarios (nome_funcionarios, salario_funcionarios) values ("Angela",2500.00);
+insert into tb_funcionarios (nome_funcionarios, salario_funcionarios) values ("Caique",2000.00);
+insert into tb_funcionarios (nome_funcionarios, salario_funcionarios) values ("Ethelyn",1500.00);
+insert into tb_funcionarios (nome_funcionarios, salario_funcionarios) values ("Pedro",2600.00);
+insert into tb_funcionarios (nome_funcionarios, salario_funcionarios) values ("Andressa",1900.00);
+
+select nome_funcionarios from tb_funcionarios where salario_funcionarios >2000;
+select nome_funcionarios, salario_funcionarios from tb_funcionarios where salario_funcionarios <2000;
+
+
+#EXERCICIO2
+create database db_ecommerce;
+use db_ecommerce;
+
+create table tb_produto(
+id_produto bigint auto_increment,
+nome_produto varchar (20) not null,
+valor_produto double,
+primary key (id_produto)
+);
+
+insert into tb_produto (nome_produto, valor_produto) values("televisão", 500000.05);
+insert into tb_produto (nome_produto, valor_produto) values("teclado", 205.90);
+insert into tb_produto (nome_produto, valor_produto) values("monitor", 999.91);
+insert into tb_produto (nome_produto, valor_produto) values("notebook", 5000.52);
+insert into tb_produto (nome_produto, valor_produto) values("mouse", 321.12);
+insert into tb_produto (nome_produto, valor_produto) values("celular", 14000.99);
+insert into tb_produto (nome_produto, valor_produto) values("umidificador de ar", 199.98);
+insert into tb_produto (nome_produto, valor_produto) values("ventilador", 500.92);
+
+select id_produto,  nome_produto, valor_produto from tb_produto where valor_produto>500;
+select id_produto,  nome_produto, valor_produto from tb_produto where valor_produto<500;
+
+update tb_produto set valor_produto = 14123.98 where id_produto = 6;
+
+select * from tb_produto;
+
+#EXERCICIO3
+CREATE database db_escola;
+USE  db_escola;
+
+CREATE TABLE tb_aluno(
+id_aluno int auto_increment,
+nome_aluno varchar(20),
+sala_aluno int,
+notaUm_aluno double,
+primary key (id_aluno)
+);
+
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("João",2, 9);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Pedro",2, 5);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Paula",3, 9.8);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Camila",3, 4);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Jessica",3, 2);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Jamily",5, 7);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Camilly",5, 8);
+insert into tb_aluno (nome_aluno, sala_aluno, notaUm_aluno) values("Sesamo",5, 6);
+
+
+
+select id_aluno, nome_aluno, notaUm_aluno from tb_aluno where notaUm_aluno>7;
+select id_aluno, nome_aluno, notaUm_aluno from tb_aluno where notaUm_aluno<7;
