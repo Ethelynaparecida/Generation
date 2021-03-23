@@ -20,7 +20,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name = "tb_postagem")
 public class Postagem {
 
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -40,8 +39,6 @@ public class Postagem {
 	@JsonIgnoreProperties("postagem")
 	private Tema tema;
 
-	
-
 	public Tema getTema() {
 		return tema;
 	}
@@ -49,8 +46,6 @@ public class Postagem {
 	public void setTema(Tema tema) {
 		this.tema = tema;
 	}
-
-
 
 	public long getId() {
 		return id;
