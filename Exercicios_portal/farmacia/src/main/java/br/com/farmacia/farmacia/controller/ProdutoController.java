@@ -30,55 +30,54 @@ import br.com.farmacia.farmacia.repository.ProdutoRepository;
 
 @RestController
 @RequestMapping("/produto")
-@CrossOrigin(origins ="*",allowedHeaders="*")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProdutoController {
 
-	
-	
+	@Autowired
+	private ProdutoRepository repository;
 
-		@Autowired
-		private ProdutoRepository repository;
-		
-		@GetMapping
-		public ResponseEntity<List<Produto>> GetAll(){
-			return ResponseEntity.ok(repository.findAll());
-		}
-		
-		@GetMapping("/{id}")
-		public ResponseEntity<Produto> GetById (@PathVariable long id){
-			return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
-					.orElse(ResponseEntity.notFound().build());
-		}
-		
-		@GetMapping("/tipoCategoria/{tipo}")
-		public ResponseEntity<List<Produto>> GetByTipo(@PathVariable String nome){
-			
-			return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
-		}
-		
-		@GetMapping("/descricaoCategoria/{descricao}")
-		public ResponseEntity<List<Produto>> GetByDescricao (@PathVariable String descricao){
-			
-			return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(descricao));
-		}
-		
-		@PostMapping
-			
-		public ResponseEntity<Produto> post (@RequestBody Produto id){
-				
-			return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(id));
-		}
-			
-		@PutMapping
-			
-		public ResponseEntity<Produto> put (@RequestBody Produto id){
-				
-			return ResponseEntity.status(HttpStatus.OK).body(repository.save(id));
-		}
+	@GetMapping
+	public ResponseEntity<List<Produto>> GetAll() {
+		return ResponseEntity.ok(repository.findAll());
+	}
 
-		@DeleteMapping("/{id}")
-		public void delete (@PathVariable long id) {
-			repository.deleteById(id);
-		}
+	@GetMapping("/{id}")
+	public ResponseEntity<Produto> GetById(@PathVariable long id) {
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp))
+				.orElse(ResponseEntity.notFound().build());
+	}
+
+	/*
+	 * @GetMapping("/tipoCategoria/{tipo}") 
+	 * public ResponseEntity<List<Produto>>	 * GetByTipo(@PathVariable String nome){
+	 * 
+	 * return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
+	 * }
+	 * 
+	 * @GetMapping("/descricaoCategoria/{descricao}") public
+	 * ResponseEntity<List<Produto>> GetByDescricao (@PathVariable String
+	 * descricao){
+	 * 
+	 * return
+	 * ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(descricao)); }
+	 */
+	@PostMapping
+
+	public ResponseEntity<Produto> post(@RequestBody Produto id) {
+
+		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(id));
+	}
+
+	@PutMapping
+
+	public ResponseEntity<Produto> put(@RequestBody Produto id) {
+
+		return ResponseEntity.status(HttpStatus.OK).body(repository.save(id));
+	}
+
+	@DeleteMapping("/{id}")
+	public void delete(@PathVariable long id) {
+		repository.deleteById(id);
+	}
 
 }
