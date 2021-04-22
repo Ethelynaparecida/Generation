@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body >
+
+    <!--Menu-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark text-light bg-success ">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Home <span class="sr-only">(Página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#secao1">carrossel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#secao2">Preços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Desativado</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/Menu-->
+
+
+    <!--imagens-->
+    <div style="margin: 10px;">
+
+    </div>
+    <div class="d-flex justify-content-start ma10">
+        <div>
+            <img src="assets/img/css-car.jpg" alt="" class="imgcards">
+        </div>
+        <div>
+            <img src="assets/img/html-car.jpg" alt="" class="imgcards">
+        </div>
+        <div>
+            <img src="assets/img/js-car.jpg" alt="" class="imgcards">
+        </div>
+
+    </div>
+
+   
+
+    
+
+
+    
+
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+        </div>
+    </div>
+    <!--/jumbotron-->
+
+<!--carrossel-->
+
+<div id="secao1" class="carousel slide mt-3 mb-3" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/html-car.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/css-car.jpg" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/js-car.jpg" alt="Terceiro Slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>
+<!--/carrossel-->
+
+    <!--Cads-->
+    <div class="container " id="secao2">
+        <div class="card-deck d-flex justify-content-center"">
+            <div class=" card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Cabeçalho</div>
+            <div class="card-body">
+                <h5 class="card-title">Título de Card Success</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
+                    conteúdo do card.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Cabeçalho</div>
+            <div class="card-body">
+                <h5 class="card-title">Título de Card Success</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
+                    conteúdo do card.</p>
+            </div>
+        </div>
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Cabeçalho</div>
+            <div class="card-body">
+                <h5 class="card-title">Título de Card Success</h5>
+                <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer preencher o
+                    conteúdo do card.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--/cards-->
+
+    <!--texte e video-->
+    <div class="container">
+
+        <div class="d-flex flex-row bd-highlight mb-3">
+            <div class="p-2 bd-highlight">
+                <h3> Titulo do Texto </h3>
+                <p>
+                    Bacon ipsum dolor amet pork chop ham bresaola hamburger pancetta ground round chicken. Ground round
+                    chuck picanha turkey strip steak venison burgdoggen pork loin andouille. Prosciutto drumstick
+                    shoulder
+                    shankle.
+                </p>
+                <p>
+                    Ground round brisket ribeye, chuck burgdoggen meatloaf chicken ball tip tri-tip frankfurter jowl.
+                    Landjaeger short loin turducken ball tip boudin. Porchetta pork loin jowl ball tip beef.
+                </p>
+
+            </div>
+            <div class="p-2 bd-highlight">
+                <iframe width="460" height="250" src="https://www.youtube.com/embed/oDHumac84aw"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+    <!--/texto e video-->
+
+
+    <!--Formulario de contato-->
+
+    <hr>
+    <div class="d-flex justify-content-center">
+        <div class="p-2 flex-sm-fill  p-3">
+            <form class=" form-inline">
+                <div class="form-group w-100 ">
+                    <label for="email">Endereço de email</label>
+                    <input type="email" class="form-control" id="email" onkeyup="validaEmail()"
+                        placeholder="nome@exemplo.com"> <strong class="p-3" id="txtEmail"></strong>
+                </div>
+            </form>
+            <label for="nome">Nome</label>
+            <form class=" form-inline">
+                <div class="form-group w-100">
+
+                    <input type="text" class="form-control" placeholder="Nome" id="nome" onkeyup="validaNome()">
+                    <strong id="txtNome" class="p-3"></strong>
+                </div>
+            </form>
+            <label for="Assunto">Assunto</label>
+            <form class=" form-inline">
+                <div class="form-group w-100">
+
+                    <textarea class="form-control" id="assunto" onkeyup="validaAssunto()" rows="3"
+                        placeholder="Assunto"></textarea>
+                </div>
+            </form>
+            <div class="form-group ">
+                <button type="button" class="btn btn-outline-success mt-3" onclick="enviar()">Enviar</button>
+            </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!--/Formulario de contato-->
+
+    <hr>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-center ">
+                <a href="https://github.com/Ethelynaparecida" target="_blank" class="p-3">
+                    <img class="redes" src="assets/img/github.png">
+                </a>
+                <a href="https://www.linkedin.com/in/ethelyn-aparecida-380a68a0/" target="_blank" class="p-3">
+                    <img class="redes" src="assets/img/linkedin.png">
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <p class="center"> Ethelyn Silva &copy;</p>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

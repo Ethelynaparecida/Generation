@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooths;
+}
+.redes{
+    width: 50px;
+}
+
+.imgcards{
+    width: 200px;
+}
+
+.ma10{
+    margin-top: 60px;
+    padding-top: 3px;
+
+    padding-left: 2px;
+}
