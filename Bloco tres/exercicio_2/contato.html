@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
@@ -26,45 +27,56 @@
                     <label for="nome">
                         <h1>Nome:</h1>
                     </label>
-                    <input type="text" id="nome">
+                    <input type="text" id="nome" onkeyup="validaNome()">
+                    <strong id="txtNome"></strong>
             </div>
             <div>
                 <label for="email">
                     <h1>Email:</h1>
                 </label>
-                <input type="email" id="email">
+                <input type="email" id="email" onkeyup="validaEmail()"><strong id="txtEmail"></strong>
             </div>
             <div>
                 <label for="assunto">
                     <h1>Assunto:</h1>
                 </label>
-                <textarea name="assunto" id="assunto" cols="50" rows="3"></textarea>
+                <textarea name="assunto" id="assunto" cols="50" rows="3" onkeyup="validaAssunto()"></textarea>
+                <div><strong id = "txtAssunto"></strong></div>
             </div>
-            <div>
-                <button>Enviar</button>
+            <div style="padding: 10px;">
+                <button onclick="enviar()">Enviar</button>
             </div>
             </form>
         </div>
+      
 
-
-
-        <div>
-            <h2>Localização</h2>
-        </div>
+    </div>
+    <div class="center">
         <div>
             <iframe title=" Mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4438.
-                    978220489275!2d-46.536327392340716!3d-23.40494318602489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-                    1!3m3!1m2!1s0x0%3A0xb7552e185be2f827!2sMaria%20Helena%20Faria%20Lima%20e%20Cunha!5e0!3m2!1spt-BR!2sbr!4v1618587940962!5m2!1spt-BR!2sbr"
-                width="400" height="250" style="border: 2px;;" allowfullscreen="" loading="lazy"></iframe>
+                978220489275!2d-46.536327392340716!3d-23.40494318602489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+                1!3m3!1m2!1s0x0%3A0xb7552e185be2f827!2sMaria%20Helena%20Faria%20Lima%20e%20Cunha!5e0!3m2!1spt-BR!2sbr!4v1618587940962!5m2!1spt-BR!2sbr"
+                width="400" height="250" allowfullscreen="" loading="lazy" id="mapaGoole" onmouseover="zoom()" onmouseout="mapaNormal()" ></iframe>
         </div>
-
     </div>
 
+    <footer>
+        <div class="flex-container" style="background-color: tomato;">
+            <a href="https://github.com/Ethelynaparecida" target="_blank">
+                <img class="redes" src="assets/img/github.png">
+            </a>
+            <a href="https://www.linkedin.com/in/ethelyn-aparecida-380a68a0/" target="_blank">
+                <img class="redes" src="assets/img/linkedin.png">
+            </a>
+    
+        </div>
+        <p class="center"> Ethelyn Silva &copy;</p>
+       
+    </footer>
 
 
-
-
+    <script src="assets/js/script.js"></script>
 
 
 </body>
