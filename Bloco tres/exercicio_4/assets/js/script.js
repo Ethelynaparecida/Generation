@@ -84,3 +84,9 @@ function mapaNormal(){
     mapa.style.height = '250px'
     window.scrollTo(0,100)
 }
+function navergar()
+{
+    $([document.documentElement, document.body]).animate({
+        screenTop: $(scrollTo).offset().top - 70
+    }, 1500);
+}
