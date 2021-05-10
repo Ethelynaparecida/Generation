@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/postagens")
 @CrossOrigin(origins ="*",allowedHeaders="*")
-public class postagemController {
+public class PostagemController {
 
 	@Autowired
 	private PostagemRepository repository;
